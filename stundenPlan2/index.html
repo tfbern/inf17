@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SLIKK | Stundenplan</title>
+    <link rel="icon" href="../img/dna.png">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="startTime()">
+
+    <section id="stundentafel">
+        <div class="grid-container-2">
+            <!-- row 1 -->
+            <div class="grid-item-2"><a href="../index.html"><img class="logo" id="logo" src="../img/dna.png" alt="SLIKK"></a></div>
+            <div class="grid-item-2 tag"></div>
+            <div class="grid-item-2 tag"></div>
+            <div class="grid-item-2 tag"></div>
+            <div class="grid-item-2 tag">
+                <div id="info"></div>
+            </div>
+            <div class="grid-item-2 tag">
+                <div id="txt"></div>
+            </div>
+            <div class="grid-item-2"></div>
+            <!-- row 2 -->
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2 tag" id="montag">Montag</div>
+            <div class="grid-item-2 tag" id="dienstag">Dienstag</div>
+            <div class="grid-item-2 tag" id="mittwoch">Mittwoch</div>
+            <div class="grid-item-2 tag" id="donnerstag">Donnerstag</div>
+            <div class="grid-item-2 tag" id="freitag">Freitag</div>
+            <div class="grid-item-2"></div>
+            <!-- row 3 -->
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2 fach-1 top">Werkstatt</div>
+            <div class="grid-item-2 fach-1 top">Werkstatt</div>
+            <div class="grid-item-2 fach-1 top">Werkstatt</div>
+            <div class="grid-item-2 fach-1 top">Werkstatt</div>
+            <div class="grid-item-2 fach-3 top">ABU</div>
+            <div class="grid-item-2"></div>
+            <!-- row 4 -->
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2 fach-1">7.40 - 11.50</div>
+            <div class="grid-item-2 fach-1">7.40 - 11.50</div>
+            <div class="grid-item-2 fach-1">7.40 - 11.50</div>
+            <div class="grid-item-2 fach-1">7.40 - 11.50</div>
+            <div class="grid-item-2 fach-3">7.40 - 10.15</div>
+            <div class="grid-item-2"></div>
+            <!-- row 5 -->
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2 fach-1"></div>
+            <div class="grid-item-2 fach-1"></div>
+            <div class="grid-item-2 fach-1"></div>
+            <div class="grid-item-2 fach-1"></div>
+            <div class="grid-item-2 fach-3 top">BWL</div>
+            <div class="grid-item-2"></div>
+            <!-- row 6 -->
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2 fach-1"></div>
+            <div class="grid-item-2 fach-1"></div>
+            <div class="grid-item-2 fach-1"></div>
+            <div class="grid-item-2 fach-1"></div>
+            <div class="grid-item-2 fach-3">10.20 - 11.50</div>
+            <div class="grid-item-2"></div>
+            <!-- row 8 -->
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2 fach-2 top">M122</div>
+            <div class="grid-item-2 fach-2 top">M143</div>
+            <div class="grid-item-2 fach-3 top">Englisch</div>
+            <div class="grid-item-2 fach-2 top">M226B</div>
+            <div class="grid-item-2 fach-3 top">Mathematik</div>
+            <div class="grid-item-2"></div>
+            <!-- row 9 -->
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2 fach-2">13.00 - 17.00</div>
+            <div class="grid-item-2 fach-2">13.00 - 17.00</div>
+            <div class="grid-item-2 fach-3">13.00 - 14.35</div>
+            <div class="grid-item-2 fach-2">13.00 - 17.00</div>
+            <div class="grid-item-2 fach-3">13.00 - 14:35</div>
+            <div class="grid-item-2"></div>
+            <!-- row 10 -->
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2 fach-2"></div>
+            <div class="grid-item-2 fach-2"></div>
+            <div class="grid-item-2 fach-4 top">Freies Lernen<br>14.50 - 15.35</div>
+            <div class="grid-item-2 fach-2"></div>
+            <div class="grid-item-2 fach-3 top">Deutsch<br>14.50 - 15.35</div>
+            <div class="grid-item-2"></div>
+            <!-- row 11 -->
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2 fach-2"></div>
+            <div class="grid-item-2 fach-2"></div>
+            <div class="grid-item-2 fach-3 top">Franz&ouml;sisch<br>15.40 - 16.25</div>
+            <div class="grid-item-2 fach-2"></div>
+            <div class="grid-item-2 fach-3 top">Sport</div>
+            <div class="grid-item-2"></div>
+            <!-- row 12 -->
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2 fach"></div>
+            <div class="grid-item-2 fach"></div>
+            <div class="grid-item-2 fach-3 top">Naturwissenschaft<br>16.30 - 17.15</div>
+            <div class="grid-item-2 fach"></div>
+            <div class="grid-item-2 fach-3">16.00 - 17.30</div>
+            <div class="grid-item-2"></div>
+            <!-- row 13 -->
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2"></div>
+            <div class="grid-item-2"></div>
+        </div>
+        </div>
+    </section>
+
+</body>
+
+<script src="main.js"></script>
+
+</html>

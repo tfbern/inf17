@@ -1,0 +1,28 @@
+* {
+	font-family: "Montserrat", sans-serif;
+}
+.grid-container-1 {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 20% 80%;
+	    grid-template-columns: 20% 80%;
+	-ms-grid-rows: 10%;
+	    grid-template-rows: 10%;
+	background-color: transparent;
+	height: 20%;
+}
+
+.grid-container-2 {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 10% auto 10%;
+	    grid-template-columns: 10% auto 10%;
+	-ms-grid-rows: 10% auto 10%;
+	    grid-template-rows: 10% auto 10%;
+	background-color: transparent;
+	height: 80%;
+}
+
+.grid-item-2 {
+	font-size: 30px;
+}

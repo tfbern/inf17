@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.form {
+    height: 25%;
+    width: 100vw;
+    text-align: center;
+}
+
+input {
+    height: 50px;
+    width: 300px;
+
+    padding: 3px;
+    margin: 5px;
+
+    font-size: 18px;
+}
+
+button {
+    height: 50px;
+    width: 155px;
+
+    font-size: 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    height: 75%;
+}
+
+.item {
+    border: 1px soild #333333;
+}
