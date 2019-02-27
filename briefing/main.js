@@ -1,16 +1,16 @@
 
-
 // Initialize Firebase
 var config = {
-    apiKey: "AIzaSyCSxJ8CACoLlBCULan7xaw48d-_79oUBq0",
-    authDomain: "studentdb-2d475.firebaseapp.com",
-    databaseURL: "https://studentdb-2d475.firebaseio.com",
-    projectId: "studentdb-2d475",
-    storageBucket: "studentdb-2d475.appspot.com",
-    messagingSenderId: "777255035712"
-};
+    apiKey: "AIzaSyBw2eB3co6QarVFAxoVhtapW7Nl8ZPJOjw",
+    authDomain: "test-32152.firebaseapp.com",
+    databaseURL: "https://test-32152.firebaseio.com",
+    projectId: "test-32152",
+    storageBucket: "test-32152.appspot.com",
+    messagingSenderId: "499109080935"
+  };
+  firebase.initializeApp(config);
 
-firebase.initializeApp(config);
+
 
 // Referenz zur DB
 var db = firebase.database()
