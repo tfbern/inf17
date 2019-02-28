@@ -1,5 +1,5 @@
 $(document).ready(function(){
 
-    $('#abmeldung-form').slideDown(300);
+    $('#abmeldung-form').fadeIn(300);
     
 })

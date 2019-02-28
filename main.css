@@ -3,7 +3,7 @@
     padding: 0px;
     font-size: 18px;
     color: #222222;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Comfortaa", sans-serif;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
@@ -343,11 +343,16 @@ input[type=submit]:hover {
     cursor: pointer;
     transition: 100ms;
     border: none;
+    border-radius: 3px;
     transition: 300ms;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
     -ms-transition: 300ms;
     -o-transition: 300ms;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .service-box:hover {
@@ -375,11 +380,11 @@ input[type=submit]:hover {
 
 .service-img {
     width: 100px;
-    padding: 5px;
+    padding: 20px;
 }
 
 .service-txt {
-    color: #ffffff;
+    color: #cccccc;
     font-size: 25px;
     transition: 300ms;
     -webkit-transition: 300ms;
