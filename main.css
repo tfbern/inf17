@@ -40,7 +40,7 @@ a {
 }
 
 #load {
-    background-color: #25B6D2;
+    background-color: #b0c6fb;
 }
 
 #spinner-contianer {
@@ -336,7 +336,7 @@ input[type=submit]:hover {
     width: 90%;
     height: 90%;
     margin: 5%;
-    background-color: #999999;
+    background-color: #666666;
     color: #ffffff;
     font-size: 25px;
     font-weight: bold;
@@ -345,28 +345,8 @@ input[type=submit]:hover {
     border: none;
 }
 
-#abmeldung:hover {
-    background-color: #25B6D2;
-}
-
-#stundenplan:hover {
-    background-color: #32BEA6;
-}
-
-#dank:hover {
-    background-color: #dd55ff;
-}
-
-#slikkwork:hover {
-    background-color: #E04F5F;
-}
-
-#briefing:hover {
-    background-color: #25B6D2;
-}
-
-#krunkScore:hover {
-    background-color: #32BEA6;
+.service-box:hover {
+    background-color: #777777;
 }
 
 .service-box:hover {
@@ -466,5 +446,6 @@ input[type=submit]:hover {
         padding: 0px;
         padding-top: 30px;
         margin: 0 auto;
+        display: none;
     }
 }

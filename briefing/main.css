@@ -72,14 +72,14 @@ h1 {
 }
 
 input {
-    height: 50px;
+    height: 80px;
     width: 80%;
     margin: 5px;
     padding: 5px;
     border: none;
     background-color: #eeeeee;
     border-radius: 2px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     transition: 300ms;
     -webkit-transition: 300ms;
@@ -109,20 +109,19 @@ input:focus {
 }
 
 button {
-    height: 50px;
+    height: 80px;
     width: 40%;
     margin: 5px;
     border: none;
     border-radius: 2px;
     transition: 300ms;
     background-color: #aaaaaa;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: #00AAFF;
     transition: 300ms;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
@@ -131,7 +130,6 @@ button:hover {
 }
 
 button:active {
-    background-color: #00AAFF;
     outline: none;
     transform: scale(0.98);
     -webkit-transform: scale(0.98);
@@ -146,8 +144,15 @@ button:active {
 }
 
 button:focus {
-    background-color: #00AAFF;
     outline: none;
+}
+
+#btnPush:hover {
+    background-color: #25B6D2;
+}
+
+#btnDel:hover {
+    background-color: #ff4747;
 }
 
 .logo {
@@ -155,4 +160,35 @@ button:focus {
     width: 50px;
     padding: 25px 0px 0px 40px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 820px) {
+
+    #grid-0 {
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .who {
+        font-size: 16px;
+    }
+
+    .what {
+        font-size: 14px;
+    }
 }

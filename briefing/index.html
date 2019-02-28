@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>STARTSITZUNG</title>
-    <link rel="icon" href="../img/team.png">
+    <link rel="icon" href="../img/igloo.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -17,6 +17,7 @@
 
     <div id="grid-0">
         <div class="grid-box-0"><a href="../index.html"><img src="../img/dna.png" alt="Logo" class="logo"></a></div>
+        <div class="grid-box-0"><a href="../index.html"><img src="../img/igloo.png" alt="Logo" class="logo"></a></div>
         <div class="grid-box-0">
             <h1>STARTSITZUNG</h1>
         </div>
@@ -25,10 +26,10 @@
         <div class="grid-box-0">
             <div id="send">
                 <input id="nameIn" type="text" placeholder="Vorname">
-                <input id="taskIn" type="text" placeholder="Beispiel: Mathematik 8.00 - 9.00 | Deutsch 9.00 - 11.50">
+                <input id="taskIn" type="text" placeholder="Aufgaben und Zeit">
                 <br>
-                <button onclick="pushValue()">PUSH</button>
-                <button onclick="delValue()">DEL</button>
+                <button id="btnPush" onclick="pushValue()">PUSH</button>
+                <button id="btnDel" onclick="delValue()">DEL</button>
             </div>
             <span id="time"></span>
         </div>
