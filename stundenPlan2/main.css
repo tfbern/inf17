@@ -136,8 +136,7 @@ body {
     }
 
     .grid-container-2 {
-        -ms-grid-columns: 8% 15% 15% 15% 15% 15% 8%;
-        grid-template-columns: 8% 15% 15% 15% 15% 15% 8%;
+        grid-template-columns: 2% 18% 18% 18% 18% 18% 2%;
     }
 
     .grid-item-2 {
