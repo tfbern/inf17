@@ -469,8 +469,22 @@ input[type=submit]:hover {
         width: 50%;
     }
 
+    .grid-container-2 {
+        grid-template-columns: 0fr 1fr 1fr 1fr 0fr;
+    }
+
     .service-box {
         font-size: 12px;
+    }
+
+    .service-img {
+        padding: 10px;
+        width: 50px;
+    }
+
+    .service-txt {
+        font-size: 12px;
+        text-align: center;
     }
 
     .logo {
