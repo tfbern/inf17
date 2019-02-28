@@ -305,9 +305,9 @@ input[type=submit]:hover {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 2fr 2fr 1fr;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     background-color: transparent;
     height: 100%;
     width: 100%;
@@ -336,29 +336,56 @@ input[type=submit]:hover {
     width: 90%;
     height: 90%;
     margin: 5%;
-    background-color: #666666;
+    background-color: #ffffff;
     color: #ffffff;
     font-size: 25px;
     font-weight: bold;
     cursor: pointer;
     transition: 100ms;
     border: none;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
 }
 
 .service-box:hover {
-    background-color: #777777;
-}
-
-.service-box:hover {
+    background-color: #eeeeee;
     box-shadow: #dddddd 3px 3px 3px;
-    transition: 200ms;
-    -webkit-transition: 200ms;
-    -moz-transition: 200ms;
-    -o-transition: 200ms;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    -ms-transition: 300ms;
+}
+
+.service-box:hover .service-txt {
+    color: #666666;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
 }
 
 .service-box:focus {
     outline: none;
+}
+
+.service-img {
+    width: 100px;
+    padding: 5px;
+}
+
+.service-txt {
+    color: #ffffff;
+    font-size: 25px;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
 }
 
 .logo {
