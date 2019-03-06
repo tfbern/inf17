@@ -86,4 +86,16 @@ input:focus {
 	.grid-container-1 {
 		display: none;
 	}
+
+	input {
+		width: 92%;
+	}
+
+	#grund {
+		width: 92%;
+	}
+
+	#btn-submit {
+		width: 50%;
+	}
 }
