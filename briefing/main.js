@@ -1,3 +1,8 @@
+$(document).ready(function(){
+
+    $('#send').fadeIn(300);
+    
+})
 
 // Initialize Firebase
 var config = {

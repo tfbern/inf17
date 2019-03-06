@@ -399,6 +399,7 @@ input[type=submit]:hover {
 .service-txt {
     color: #cccccc;
     font-size: 25px;
+    padding: 20px;
     transition: 300ms;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
@@ -458,7 +459,7 @@ input[type=submit]:hover {
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .spinner {
