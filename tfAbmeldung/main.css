@@ -15,6 +15,70 @@
 	font-size: 30px;
 }
 
+input {
+    width: 45%;
+    height: 50px;
+
+    padding: 5px;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+    margin: 1%;
+
+    display: inline-block;
+
+    transition: 300ms;
+}
+
+input:hover {
+    box-shadow: #eeeeee 5px 5px 5px;
+
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+}
+
+input:focus {
+    border: 1px solid #666666;
+    outline: none;
+}
+
+#grund {
+    width: 94%;
+}
+
+input[type=submit] {
+    width: 25%;
+
+    border: none;
+    background-color: #25B6D2;
+    color: #ffffff;
+    transform: scale(1);
+    transition: 200ms;
+    -webkit-transform: scale(1);
+    -webkit-transition: 200ms;
+    -moz-transform: scale(1);
+    -moz-transition: 200ms;
+    -o-transform: scale(1);
+    -o-transition: 200ms;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #69CD5A;
+    box-shadow: #dddddd 5px 5px 5px;
+    transform: scale(1.02);
+    transition: 200ms;
+    -webkit-transform: scale(1.02);
+    -webkit-transition: 200ms;
+    -moz-transform: scale(1.02);
+    -moz-transition: 200ms;
+    -o-transform: scale(1.02);
+    -o-transition: 200ms;
+}
+
 @media only screen and (max-width: 820px) {
 	.grid-container-1 {
 		display: none;
