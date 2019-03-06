@@ -49,9 +49,8 @@ input:focus {
     width: 94%;
 }
 
-input[type=submit] {
+button[type=submit] {
     width: 25%;
-
     border: none;
     background-color: #25B6D2;
     color: #ffffff;
@@ -63,9 +62,10 @@ input[type=submit] {
     -moz-transition: 200ms;
     -o-transform: scale(1);
     -o-transition: 200ms;
+    -ms-transition: 200ms;
 }
 
-input[type=submit]:hover {
+button[type=submit]:hover {
     cursor: pointer;
     background-color: #69CD5A;
     box-shadow: #dddddd 5px 5px 5px;
