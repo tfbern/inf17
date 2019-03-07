@@ -227,9 +227,23 @@ a {
 
 #intro {
     /* background-image: linear-gradient(0deg, #FFFFFF, #b0c6fb); */
-    background-image: linear-gradient(0deg, #FFFFFF, #0FBDD2);
+    background-image: linear-gradient(0deg, #FFFFFF 20%, #0FBDD2 100%);
     margin: 0px;
     overflow: hidden;
+}
+
+@keyframes bounce {
+    0% { transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); }
+    100% { transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); }
+}
+
+#igloo-img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    /* animation: bounce 1000ms infinite alternate;
+    -webkit-animation: bounce 1000ms infinite alternate; */
+    cursor: pointer;
 }
 
 .grid-container-1 {
@@ -245,8 +259,8 @@ a {
 .grid-container-2 {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 1fr 1fr 2fr 2fr;
-    height: 90vh;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    height: 100vh;
 }
 
 .grid-container-3 {
@@ -452,7 +466,7 @@ a {
     color: #fff;
     font-size: 1em;
     font-family: Arial;
-    text-shadow: 0 0 1px #000;
+    text-shadow: 0px 0px 0.5px #000;
 }
 
 @-webkit-keyframes snowflakes-fall {

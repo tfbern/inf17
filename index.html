@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/igloo.png">
     <title>IGLOO | Startseite</title>
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Montserrat" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <section id="load">
         <header></header>
@@ -18,48 +20,50 @@
     </section>
 
     <div class="snowflakes" aria-hidden="true">
-            <div class="snowflake">
-            ❅
-            </div>
-            <div class="snowflake">
-            ❅
-            </div>
-            <div class="snowflake">
-            ❆
-            </div>
-            <div class="snowflake">
-            ❄
-            </div>
-            <div class="snowflake">
-            ❅
-            </div>
-            <div class="snowflake">
-            ❆
-            </div>
-            <div class="snowflake">
-            ❄
-            </div>
-            <div class="snowflake">
-            ❅
-            </div>
-            <div class="snowflake">
-            ❆
-            </div>
-            <div class="snowflake">
-            ❄
-            </div>
+        <div class="snowflake">
+            <!-- ❅ -->❄
         </div>
+        <div class="snowflake">
+            <!-- ❅ -->❄
+        </div>
+        <div class="snowflake">
+            <!-- ❆ -->❄
+        </div>
+        <div class="snowflake">
+            <!-- ❄ -->❄
+        </div>
+        <div class="snowflake">
+            <!-- ❅ -->❄
+        </div>
+        <div class="snowflake">
+            <!-- ❆ -->❄
+        </div>
+        <div class="snowflake">
+            <!-- ❄ -->❄
+        </div>
+        <div class="snowflake">
+            <!-- ❅ -->❄
+        </div>
+        <div class="snowflake">
+            <!-- ❆ -->❄
+        </div>
+        <div class="snowflake">
+            <!-- ❄ -->❄
+        </div>
+    </div>
 
     <section id="intro">
-        <div class="grid-container-1">
+        <!-- <div class="grid-container-1">
             <div class="grid-item-1"><a><img class="logo" src="img/igloo.png" alt="SLIKK"></a></div>
             <div class="grid-item-1"></div>
-        </div>
+        </div> -->
 
         <div class="grid-container-2">
             <div class="grid-item-2"></div>
-            <div class="grid-item-2"><h2>WILLKOMMEN IM ...</h2></div>
-            <div class="grid-item-2"><h1 class="titel white-txt">IGLOO</h1></div>
+            <div class="grid-item-2"><img id="igloo-img" src="img/igloo.png" alt="Igloo" onclick="move()"></div>
+            <div class="grid-item-2">
+                <h1 class="titel white-txt">IGLOO</h1>
+            </div>
             <div class="grid-item-2"></div>
         </div>
     </section>
@@ -72,14 +76,32 @@
             <div class="grid-item-3"></div>
             <div class="grid-item-3"></div>
             <div class="grid-item-3"></div>
-            <div class="grid-item-3"><a href="tfAbmeldung/index.html"><button id="abmeldung" class="service-box"><img class="service-img" src="img/hospital.png" alt="Abmeldung"><p class="service-txt">ABMELDUNG</p></button></a></div>
-            <div class="grid-item-3"><a href="stundenPlan2/index.html"><button id="stundenplan" class="service-box"><img class="service-img" src="img/calendar.png" alt="Stundenplan"><p class="service-txt">STUNDENPLAN</p></button></a></div>
-            <div class="grid-item-3"><a href="briefing/index.html"><button id="briefing" class="service-box"><img class="service-img" src="img/teamwork.png" alt="Briefing"><p class="service-txt">BRIEFING</p></button></a></div>
+            <div class="grid-item-3"><a href="tfAbmeldung/index.html"><button id="abmeldung" class="service-box"><img
+                            class="service-img" src="img/hospital.png" alt="Abmeldung">
+                        <p class="service-txt">ABMELDUNG</p>
+                    </button></a></div>
+            <div class="grid-item-3"><a href="stundenPlan2/index.html"><button id="stundenplan" class="service-box"><img
+                            class="service-img" src="img/calendar.png" alt="Stundenplan">
+                        <p class="service-txt">STUNDENPLAN</p>
+                    </button></a></div>
+            <div class="grid-item-3"><a href="briefing/index.html"><button id="briefing" class="service-box"><img class="service-img"
+                            src="img/teamwork.png" alt="Briefing">
+                        <p class="service-txt">BRIEFING</p>
+                    </button></a></div>
             <div class="grid-item-3"></div>
             <div class="grid-item-3"></div>
-            <div class="grid-item-3"><a href="slikkWork/index.html"><button id="slikkwork" class="service-box"><img class="service-img" src="img/css-3.png" alt="CSS"><p class="service-txt">IGLOOWORK</p></button></a></div>
-            <div class="grid-item-3"><a href="krunkScore/"><button id="krunkScore" class="service-box"><img class="service-img" src="img/rifle.png" alt="Rifle"><p class="service-txt">SCORE</p></button></a></div>
-            <div class="grid-item-3"><a href="#"><button id="krunkScore" class="service-box"><img class="service-img" src="img/reserved.png" alt="KURDISTAN"><p class="service-txt">KURDISTAN</p></button></a></div>
+            <div class="grid-item-3"><a href="slikkWork/index.html"><button id="slikkwork" class="service-box"><img
+                            class="service-img" src="img/css-3.png" alt="CSS">
+                        <p class="service-txt">IGLOOWORK</p>
+                    </button></a></div>
+            <div class="grid-item-3"><a href="krunkScore/"><button id="krunkScore" class="service-box"><img class="service-img"
+                            src="img/rifle.png" alt="Rifle">
+                        <p class="service-txt">SCORE</p>
+                    </button></a></div>
+            <div class="grid-item-3"><a href="#"><button id="krunkScore" class="service-box"><img class="service-img"
+                            src="img/reserved.png" alt="KURDISTAN">
+                        <p class="service-txt">KURDISTAN</p>
+                    </button></a></div>
             <div class="grid-item-3"></div>
             <div class="grid-item-3"></div>
             <div class="grid-item-3"></div>
@@ -93,4 +115,5 @@
     <script src="main.js"></script>
     <script src="snow.js"></script>
 </body>
+
 </html>

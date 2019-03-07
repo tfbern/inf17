@@ -112,7 +112,7 @@ input:focus {
 
 button {
     height: 80px;
-    width: 45%;
+    width: 100%;
     margin: 5px 0px 0px 0px;
     border: none;
     border-radius: 2px;
