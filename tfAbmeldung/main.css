@@ -45,6 +45,35 @@ input:focus {
     outline: none;
 }
 
+#home {
+    background-image: linear-gradient(230deg, #ffffff 60%, #eeeeee 40%);
+}
+
+#home-1 {
+    width: 100vw;
+    height: 100px;
+}
+
+#home-2 {
+    width: 100vw;
+    height: 175px;
+
+    line-height: 175px;
+    text-align: center;
+}
+
+#home-3 {
+    width: 100vw;
+    height: auto;
+}
+
+#abmeldung-form {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    display: none;
+}
+
 #btn-submit {
     width: 25%;
 	height: 50px;
@@ -70,12 +99,13 @@ input:focus {
     transform: scale(1.02);
     transition: 200ms;
     -webkit-transform: scale(1.02);
-    -webkit-transition:;
+    -webkit-transition: 200ms;
     -moz-transform: scale(1.02);
-    -moz-transition:;
+    -moz-transition: 200ms;
     -o-transform: scale(1.02);
-    -o-transition:;
-    -ms-transition:;
+    -o-transition: 200ms;
+    -ms-transition: 200ms;
+    -ms-transform: scale(1.02);
 }
 
 #grund {
