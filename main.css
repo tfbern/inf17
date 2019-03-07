@@ -227,7 +227,7 @@ a {
 
 #intro {
     /* background-image: linear-gradient(0deg, #FFFFFF, #b0c6fb); */
-    background-image: linear-gradient(0deg, #FFFFFF 20%, #0FBDD2 100%);
+    background-image: linear-gradient(0deg, #FFFFFF 10%, #0FBDD2 100%);
     margin: 0px;
     overflow: hidden;
 }
