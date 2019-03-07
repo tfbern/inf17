@@ -18,6 +18,10 @@
     color: #333333;
 }
 
+.white-txt {
+    color: #ffffff;
+}
+
 body {
     margin: 0px;
 }
@@ -34,11 +38,18 @@ section {
 }
 
 h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+}
+
+.titel {
     font-family: "Polya";
     font-size: 150px;
     font-weight: bold;
     color: #ffffff;
-    
+
     text-align: center;
 }
 
@@ -380,15 +391,19 @@ a {
     }
 
     h1 {
-        font-size: 35px;
+        font-size: 25px;
+    }
+
+    .titel {
+        font-size: 80px;
     }
 
     h2 {
-        font-size: 10px;
+        font-size: 20px;
     }
 
     .spinner {
-        margin: 50% 50%;
+        margin: 50% auto;
     }
 
     form {
@@ -411,8 +426,6 @@ a {
     .grid-container-3 {
         grid-template-columns: 0fr 1fr 1fr 1fr 0fr;
     }
-
-    .service-box {}
 
     .service-img {
         padding: 10px;
