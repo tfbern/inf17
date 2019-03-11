@@ -46,7 +46,7 @@ function pushValue() {
     var name = document.getElementById('nameIn').value
     var task = document.getElementById('taskIn').value
 
-    var nameIn = name.toUpperCase()
+    var nameIn = name.toUpperCase().trim()
     var taskIn = task.toUpperCase()
 
     // Wenn der Wert der beiden Inputs '' entspricht ---> Nichts machen
@@ -69,6 +69,8 @@ function pushValue() {
 
         // Fehlermeldung ---> Eines der Inputs oder beide wurden nicht ausgefüllt
         console.log('Both inputs need to be filled out')
+        document.getElementById('nameIn').style.border = '1px solid #ff3333'
+        document.getElementById('taskIn').style.border = '1px solid #ff3333'
 
     }
 

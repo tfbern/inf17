@@ -74,6 +74,7 @@ input {
     height: 80px;
     width: 100%;
     margin: 5px 0px 5px 0px;
+    padding: 3px;
     border: none;
     background-color: #eeeeee;
     border-radius: 2px;
