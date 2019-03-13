@@ -1,10 +1,15 @@
-$('document').ready(function(){
+$('document').ready(function() {
+
     $('#ferien').fadeIn(300)
 
-    $('.one').fadeIn(600)
-    $('.two').fadeIn(1000)
-    $('.three').fadeIn(1400)
-    $('.four').fadeIn(1800)
-    $('.five').fadeIn(2200)
-    $('.six').fadeIn(2600)
+    $('.one').delay(200).show()
+    $('.two').delay(400).show(100)
+    $('.three').delay(600).show(100)
+    $('.four').delay(800).show(100)
+    $('.five').delay(1000).show(100)
+    $('.six').delay(1200).show(100)
+
+    $('.date').delay(1200).fadeIn(300)
+    $('.weeks').delay(1200).fadeIn(300)
+
 })

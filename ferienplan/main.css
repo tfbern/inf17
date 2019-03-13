@@ -2,11 +2,19 @@
     margin: 0;
     padding: 0;
     font-family: "Comfortaa", sans-serif;
+    color: #222222;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 h1 {
     font-size: 18px;
     text-align: unset;
+}
+
+a {
+    text-decoration: none;
 }
 
 #ferien {
@@ -16,10 +24,26 @@ h1 {
     display: none;
 }
 
+.logo {
+    display: block;
+    width: 50px;
+    padding: 25px 0px 0px 40px;
+    cursor: pointer;
+}
+
+.grid-container-1 {
+    display: grid;
+    -ms-grid-columns: 10% 80%;
+    grid-template-columns: 20% 80%;
+    -ms-grid-rows: 100%;
+    grid-template-rows: 100%;
+    background-color: #eeeeee;
+    height: 12vh;
+}
+
 .grid-container-2 {
-    height: 90vh;
+    height: 88vh;
     width: 90vw;
-    background-color: white;
     margin: 0 auto;
 
     display: grid;
@@ -27,6 +51,20 @@ h1 {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 1px;
     grid-row-gap: 1px;
+}
+
+.grid-container-3 {
+    height: 90vh;
+    width: 90vw;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 15% 1fr 5%;
+    grid-template-rows: 10% 1fr 10%;
+}
+
+.grid-item-3 {
+    display: unset;
 }
 
 .first {
@@ -40,6 +78,19 @@ h1 {
     width: 100%;
 
     background-color: #333333;
+    border-radius: 3px; 
+}
+
+.date {
+    display: none;
+    text-align: center;
+    padding: 10% 0 0 0;
+}
+
+.weeks {
+    display: none;
+    text-align: center;
+    padding: 10% 0 0 0;
 }
 
 .herbst {
@@ -62,17 +113,39 @@ h1 {
     background-color: #FFD700;
 }
 
-.date {
-    text-align: center;
-    padding: 10% 0 0 0;
-}
-
-.weeks {
-    text-align: center;
-    padding: 10% 0 0 0;
-    font-weight: bold;
-}
-
 .bold {
     font-weight: bold;
+}
+
+table {
+    height: 100%;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+    width: auto;
+    padding: 5px;
+
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    height: 10px;
+    width: auto;
+    padding: 5px;
+
+    text-align: left;
+}
+
+@media only screen and (max-width: 820px) {
+
+    .grid-container-1 {
+        display: none;
+    }
+
+    * {
+        font-size: 8px;
+    }
 }
