@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa", sans-serif;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: unset;
+}
+
+#ferien {
+    height: 100vh;
+    widows: 100vw;
+
+    display: none;
+}
+
+.grid-container-2 {
+    height: 90vh;
+    width: 90vw;
+    background-color: white;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+}
+
+.first {
+    text-align: center;
+    padding: 40px 0 40px 0;
+}
+
+.block {
+    display: none;
+    height: 100%;
+    width: 100%;
+
+    background-color: #333333;
+}
+
+.herbst {
+    background-color: #2A9657;
+}
+
+.winter {
+    background-color: #69B5AF;
+}
+
+.sport {
+    background-color: #E65263;
+}
+
+.frühjahr {
+    background-color: #ffa500;
+}
+
+.sommer {
+    background-color: #FFD700;
+}
+
+.date {
+    text-align: center;
+    padding: 10% 0 0 0;
+}
+
+.weeks {
+    text-align: center;
+    padding: 10% 0 0 0;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
