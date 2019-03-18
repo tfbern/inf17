@@ -6,6 +6,7 @@
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
+    -moz-hyphens: auto;
 }
 
 h1 {
@@ -13,7 +14,15 @@ h1 {
     font-weight: bold;
     text-align: unset;
 
-    padding-top: 30px;
+    padding: 30px 0 0 0;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: unset;
+
+    padding: 30px 0 0 0;
 }
 
 a {
@@ -40,8 +49,8 @@ button {
 
 .grid-container-1 {
     display: grid;
-    -ms-grid-columns: 18% 82%;
-    grid-template-columns: 18% 82%;
+    -ms-grid-columns: 12% 88%;
+    grid-template-columns: 12% 88%;
     -ms-grid-rows: 100%;
     grid-template-rows: 100%;
     background-color: #eeeeee;
@@ -49,19 +58,24 @@ button {
 }
 
 .grid-container-2 {
-    height: 75vh;
+    height: 88vh;
     width: 100vw;
     margin: 0 auto;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 1px;
     grid-row-gap: 1px;
 }
 
+#details {
+    height: 100vh;
+    width: 100vw;
+}
+
 .grid-container-3 {
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     margin: 0 auto;
 
@@ -185,11 +199,16 @@ td {
     }
 
     .grid-container-2 {
-        width: 90vw;
+        width: 100vw;
+    }
+
+    .first {
+        padding: 40px 5px 40px 5px;
     }
 
     .grid-container-3 {
-        width: 90vw;
+        width: 100vw;
+        grid-template-columns: 5% 1fr 5%;
     }
 
     * {
