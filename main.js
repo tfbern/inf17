@@ -10,5 +10,5 @@ function move() {
         top: 1000,
         left: 0,
         behavior: 'smooth'
-      });
+    });
 }

@@ -1,7 +1,7 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
     $('#send').fadeIn(300);
-    
+
 })
 
 // Initialize Firebase
@@ -12,8 +12,8 @@ var config = {
     projectId: "test-32152",
     storageBucket: "test-32152.appspot.com",
     messagingSenderId: "499109080935"
-  };
-  firebase.initializeApp(config);
+};
+firebase.initializeApp(config);
 
 
 
@@ -35,7 +35,6 @@ function writeUserData(name, task, date, timeStamp) {
         task: task,
         Datum: date,
         Zeitstempel: timeStamp
-
     });
 }
 
@@ -63,33 +62,12 @@ function pushValue() {
         document.getElementById('taskIn').value = ''
         document.getElementById('nameIn').focus()
 
-
-
     } else {
-
         // Fehlermeldung ---> Eines der Inputs oder beide wurden nicht ausgefüllt
         console.log('Both inputs need to be filled out')
         document.getElementById('nameIn').style.border = '1px solid #ff3333'
         document.getElementById('taskIn').style.border = '1px solid #ff3333'
-
     }
-
-}
-
-// Trägt die Daten in DB ein ---> Muss in pushValue() aufgerufen werden
-function delUserData(name) {
-    console.log('No data was selected to delete');
-}
-
-function delValue() {
-    // Wert im Input "nameIn" und "taskIn"
-    var name = document.getElementById('nameIn').value
-    var task = document.getElementById('taskIn').value
-
-    var nameOut = name.toUpperCase()
-    var taskOut = task.toUpperCase()
-
-    delUserData()
 }
 
 // Neue Referenz auf DB
@@ -102,84 +80,51 @@ addDB.on("value", snap => {
     // Der Wert von "grid-1" wir auf 0 gesetzt
     kill.innerHTML = ""
 
-
-    var kek = snap.val()
+    var db = snap.val()
 
     // "grid-1" wird erfasst
     var grid = document.getElementById('grid-1')
 
     // Diese For-Loops bauen den Pfad zu den Schülerdaten auf.
-    for (x in kek) {
+    for (name in db) {
 
-        for (kys in kek[x]) {
+        for (jahr in db[name]) {
+            
+            for (monat in db[name][jahr]) {
+                
+                for (tag in db[name][jahr][monat]) {
+                    console.log(tag);
 
-            for (killme in kek[x][kys]) {
+                    for (register in db[name][jahr][monat][tag]) { 
 
-                for (pls in kek[x][kys][killme]) {
+                        var objName = db[name][jahr][monat][tag][register]
 
-                    for (endmylife in kek[x][kys][killme][pls]) {
+                        if (jahr == year && monat == month && tag == day) {
 
-                        var objName = kek[x][kys][killme][pls][endmylife]
-                        console.log(pls);
-
-                        /* if (endmylife == 'Name') {
-
-                            // "grid-1-item" wird erstellt + Klasse
-                            var newBox = document.createElement('div')
-                            newBox.className = 'grid-box-1'
-
-                            // Definiert Parent- und Child-Elemente
-                            grid.append(newBox)
-
-                        }
-
-                        // Wenn der Name der Property = Name ---> Name wird in Variable gespeichert
-                        if (endmylife == 'Name') {
-
-                            var name = objName
-
-                            // Erstell "p DOM" mit der Klasse "who" und weist es dem "grid-1-item" zu
-                            var newName = document.createElement('p')
-                            newName.className = 'who'
-                            newBox.appendChild(newName)
-                            newName.innerHTML = name
-                        }
-
-                        // Erstell "p DOM" mit der Klasse "what" und weist es dem "grid-1-item" zu
-                        if (endmylife == 'task') {
-                            var task = objName
-                            var newTask = document.createElement('p')
-                            newTask.className = 'what'
-                            newBox.appendChild(newTask)
-                            newTask.innerHTML = task
-                        } */
-
-                        if (pls == day) {
-                            if (endmylife == 'Name') {
+                            if (register == 'Name') {
 
                                 // "grid-1-item" wird erstellt + Klasse
                                 var newBox = document.createElement('div')
                                 newBox.className = 'grid-box-1'
-    
+
                                 // Definiert Parent- und Child-Elemente
                                 grid.append(newBox)
-    
                             }
-    
+
                             // Wenn der Name der Property = Name ---> Name wird in Variable gespeichert
-                            if (endmylife == 'Name') {
-    
+                            if (register == 'Name') {
+
                                 var name = objName
-    
+
                                 // Erstell "p DOM" mit der Klasse "who" und weist es dem "grid-1-item" zu
                                 var newName = document.createElement('p')
                                 newName.className = 'who'
                                 newBox.appendChild(newName)
                                 newName.innerHTML = name
                             }
-    
+
                             // Erstell "p DOM" mit der Klasse "what" und weist es dem "grid-1-item" zu
-                            if (endmylife == 'task') {
+                            if (register == 'task') {
                                 var task = objName
                                 var newTask = document.createElement('p')
                                 newTask.className = 'what'

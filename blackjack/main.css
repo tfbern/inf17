@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    background-color: transparent;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.box {
+    height: 25vh;
+    width: 70vw;
+
+    margin: 0 auto;
+
+    text-align: center;
+    
+}
+
+.logo {
+    width: 75px;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Ultra', serif;
+    font-size: 40px;
+}
+
+#dealer-1, #dealer-2, #player-1, #player-2 {
+    height: 75%;
+    width: 10%;
+
+    font-display: absolute;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.sum {
+    height: 25%;
+    width: 100%;
+}
+
+button {
+    height: 40%;
+    width: 25%;
+    font-family: 'Ultra', serif;
+    font-size: 25px;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    margin: 10px;
+    background-color: #eeeeee;
+    cursor: pointer;
+    transition: 200ms;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+    box-shadow: 0px 2px 5px;
+}
+
+button:hover {
+    background-color: #dddddd;
+    transition: 200ms;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+}
+
+button:active {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+#grid-one {
+    display: grid;
+
+    grid-template-columns: repeat(8, 11%);
+    grid-template-rows: 90%;
+    grid-gap: 10px;
+
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+#grid-two {
+    display: grid;
+
+    grid-template-columns: repeat(8, 11%);
+    grid-template-rows: 90%;
+    grid-gap: 10px;
+
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.grid-box-1 {
+    border: solid 3px #333333;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.grid-box-2 {
+    border: solid 3px #333333;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #ffffff;
+}
+
+#w {
+    font-family: 'Ultra', serif;
+}
+
+#l {
+    font-family: 'Ultra', serif;
+}

@@ -11,5 +11,4 @@ $('document').ready(function() {
 
     $('.date').delay(1200).fadeIn(300)
     $('.weeks').delay(1200).fadeIn(300)
-
 })

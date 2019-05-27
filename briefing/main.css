@@ -128,7 +128,7 @@ button {
     border: none;
     border-radius: 2px;
     transition: 300ms;
-    background-color: #aaaaaa;
+    background-color: #25B6D2;
     font-size: 20px;
     font-weight: bold;
     color: #ffffff;
@@ -136,20 +136,28 @@ button {
 
 button:hover {
     cursor: pointer;
+    background-color: #69CD5A;
+    box-shadow: #dddddd 5px 5px 5px;
     transition: 300ms;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
     -ms-transition: 300ms;
     -o-transition: 300ms;
+
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
 }
 
 button:active {
     outline: none;
     transform: scale(0.98);
-    -webkit-transform: scale(0.98);
-    -moz-transform: scale(0.98);
-    -ms-transform: scale(0.98);
-    -o-transform: scale(0.98);
+    -webkit-transform: sca;
+    -moz-transform: sca;
+    -ms-transform: sca;
+    -o-transform: sca;
     transition: 50ms;
     -webkit-transition: 50ms;
     -moz-transition: 50ms;
@@ -159,27 +167,12 @@ button:active {
 
 button:focus {
     outline: none;
+    background-color: #69CD5A;
     transform: scale(0.95);
     -webkit-transform: scale(0.95);
     -moz-transform: scale(0.95);
     -ms-transform: scale(0.95);
     -o-transform: scale(0.95);
-}
-
-#btnPush:hover {
-    background-color: #25B6D2;
-}
-
-#btnDel:hover {
-    background-color: #ff4747;
-}
-
-#btnPush:focus {
-    background-color: #25B6D2;
-}
-
-#btnDel:focus {
-    background-color: #ff4747;
 }
 
 .logo {
