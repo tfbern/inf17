@@ -38,6 +38,10 @@ function writeUserData(name, task, date, timeStamp) {
     });
 }
 
+$("#briefingForm").submit(function(e) {
+    e.preventDefault();
+});
+
 // Durch diese Funktion entnehme ich dem Benutzer die nötigen Daten und mache ein push in die Firebase DB.
 function pushValue() {
 
