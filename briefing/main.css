@@ -177,8 +177,8 @@ button:focus {
 
 .logo {
     display: block;
-    width: 50px;
-    padding: 25px 0px 0px 40px;
+    width: 20%;
+    padding: 7.5% 0px 0px 15%;
     cursor: pointer;
 }
 
